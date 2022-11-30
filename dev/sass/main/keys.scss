@@ -1,0 +1,124 @@
+.path-keys {
+  padding: var(--wp--custom--spacing--p-y) var(--wp--custom--spacing--p-x);
+  margin-block-start: 96px;
+}
+
+.path-keys-meta {
+  margin-bottom: 64px !important;
+}
+
+.path-keys-meta p {
+  max-width: 100%;
+}
+
+.path-keys-grid {
+  display: grid !important;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+}
+
+.path-keys-grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "top-left"
+    "top-right"
+    "high-left"
+    "high-right"
+    "center-left"
+    "image"
+    "center-right"
+    "low-left"
+    "low-right"
+    "bottom";
+}
+
+.path-keys-grid-cell {
+  justify-content: center;
+  padding: 24px;
+  background: var(--wp--preset--color--surface);
+  box-shadow: 0px 0px 48px rgba(25, 28, 25, 0.09);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.path-keys-grid-cell p {
+  font-weight: 700;
+}
+
+.path-keys-grid-cell:hover {
+  box-shadow: 0px 8px 24px rgba(25, 28, 25, 0.15);
+  transform: translateY(-3px);
+}
+
+.path-keys-image {
+  background: var(--wp--preset--color--surface);
+  box-shadow: 0px 0px 48px rgba(25, 28, 25, 0.09);
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .path-keys-meta p {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 906px) {
+  .path-keys-meta p {
+    max-width: 60%;
+  }
+
+  .path-keys-grid {
+    grid-template-columns: 6px 1fr 1fr 6px 1fr 1fr 1fr 6px 1fr 1fr 6px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . top-left top-left top-left . top-right top-right top-right . ."
+      ". high-left high-left high-left image image image high-right high-right high-right ."
+      "center-left center-left center-left . image image image . center-right center-right center-right"
+      ". low-left low-left low-left image image image low-right low-right low-right ."
+      ". . . . bottom bottom bottom . . . .";
+  }
+
+  .path-keys-image {
+    grid-area: image;
+  }
+
+  .path-keys-top-left {
+    grid-area: top-left;
+  }
+
+  .path-keys-top-right {
+    grid-area: top-right;
+  }
+
+  .path-keys-center-left {
+    grid-area: center-left;
+  }
+
+  .path-keys-center-right {
+    grid-area: center-right;
+  }
+
+  .path-keys-high-left {
+    grid-area: high-left;
+  }
+
+  .path-keys-low-left {
+    grid-area: low-left;
+  }
+
+  .path-keys-high-right {
+    grid-area: high-right;
+  }
+
+  .path-keys-low-right {
+    grid-area: low-right;
+  }
+
+  .path-keys-bottom {
+    grid-area: bottom;
+  }
+}
