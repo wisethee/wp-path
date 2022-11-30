@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "yana/button",
+  "version": "0.0.1",
+  "title": "Button",
+  "category": "widgets",
+  "icon": "button",
+  "description": "Button",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "button",
+  "editorScript": "file:./button.js",
+  "editorStyle": "file:./button.css",
+  "style": "file:./style-button.css",
+  "attributes": {
+    "text": { "type": "string" },
+    "linkObject": { "type": "object", "default": {} },
+    "config": { "type": "string", "default": "primary" }
+  }
+}

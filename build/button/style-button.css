@@ -1,0 +1,81 @@
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/button/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+.yana-button {
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0 !important;
+  min-width: 64px;
+  overflow: visible;
+  transition: all 0.2s ease;
+  color: var(--wp--preset--color--on-surface);
+}
+.yana-button.is-primary {
+  padding: 0px 24px;
+}
+.yana-button.is-secondary {
+  padding: 0;
+}
+.yana-button.is-primary:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 24px;
+  background: var(--wp--preset--color--secondary-container);
+  width: 48px;
+  height: 48px;
+  transition: all 0.3s ease;
+}
+.yana-button span {
+  position: relative;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+.yana-button svg {
+  position: relative;
+  top: 1px;
+  margin-left: 16px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--wp--preset--color--on-secondary-container);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.yana-button:hover span {
+  color: var(--wp--preset--color--on-secondary-container);
+}
+.yana-button:hover.is-primary:before {
+  width: 100%;
+}
+.yana-button:hover svg {
+  transform: translateX(0);
+  stroke: var(--wp--preset--color--on-secondary-container);
+}
+.yana-button:active {
+  transform: scale(0.96);
+}
+
+/*# sourceMappingURL=style-button.css.map*/
