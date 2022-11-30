@@ -21,12 +21,14 @@
   min-width: 64px;
   overflow: visible;
   transition: all 0.2s ease;
-  color: var(--wp--preset--color--on-surface);
+
   &.is-primary {
     padding: 0px 24px;
+    color: var(--wp--preset--color--on-surface);
   }
   &.is-secondary {
     padding: 0;
+    color: var(--wp--preset--color--primary);
   }
   &.is-primary:before {
     content: "";
@@ -57,10 +59,17 @@
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: var(--wp--preset--color--on-secondary-container);
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
+  }
+
+  &.is-primary svg {
+    stroke: var(--wp--preset--color--on-secondary-container);
+  }
+
+  &.is-secondary svg {
+    stroke: var(--wp--preset--color--primary);
   }
 
   &:hover {
