@@ -5,7 +5,7 @@
  * The following styles get applied both on the front of your site
  * and in the editor.
  */
-.yana-button {
+.path-button {
   box-sizing: border-box;
   position: relative;
   -webkit-user-select: none;
@@ -26,13 +26,13 @@
   transition: all 0.2s ease;
   color: var(--wp--preset--color--on-surface);
 }
-.yana-button.is-primary {
+.path-button.is-primary {
   padding: 0px 24px;
 }
-.yana-button.is-secondary {
+.path-button.is-secondary {
   padding: 0;
 }
-.yana-button.is-primary:before {
+.path-button.is-primary:before {
   content: "";
   position: absolute;
   top: 0;
@@ -44,7 +44,7 @@
   height: 48px;
   transition: all 0.3s ease;
 }
-.yana-button span {
+.path-button span {
   position: relative;
   font-size: 16px;
   line-height: 48px;
@@ -52,7 +52,7 @@
   letter-spacing: 0.03em;
   vertical-align: middle;
 }
-.yana-button svg {
+.path-button svg {
   position: relative;
   top: 1px;
   margin-left: 16px;
@@ -64,17 +64,17 @@
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
-.yana-button:hover span {
+.path-button:hover span {
   color: var(--wp--preset--color--on-secondary-container);
 }
-.yana-button:hover.is-primary:before {
+.path-button:hover.is-primary:before {
   width: 100%;
 }
-.yana-button:hover svg {
+.path-button:hover svg {
   transform: translateX(0);
   stroke: var(--wp--preset--color--on-secondary-container);
 }
-.yana-button:active {
+.path-button:active {
   transform: scale(0.96);
 }
 

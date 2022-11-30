@@ -1,0 +1,19 @@
+.path-header {
+  padding: var(--wp--custom--spacing--p-y) var(--wp--custom--spacing--p-x);
+  z-index: 9;
+  background-color: transparent;
+}
+
+.wp-block-navigation .wp-block-navigation__submenu-icon {
+  z-index: 9;
+}
+
+.path-header-buttons {
+  display: none !important;
+}
+
+@media (min-width: 906px) {
+  .path-header-buttons {
+    display: flex !important;
+  }
+}

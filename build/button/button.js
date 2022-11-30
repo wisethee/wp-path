@@ -123,7 +123,7 @@ const Edit = props => {
     onClick: buttonHandlerSecondary,
     label: "Secondary"
   }, "Secondary"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
-    className: `yana-button is-${props.attributes.config}`
+    className: `path-button is-${props.attributes.config}`
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), {
     allowedFormats: [],
     tagName: "span",
@@ -181,7 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 const Save = props => {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("a", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), {
     href: props.attributes.linkObject.url,
-    className: `yana-button is-${props.attributes.config}`
+    className: `path-button is-${props.attributes.config}`
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", null, props.attributes.text), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("svg", {
     width: "13px",
     height: "10px",
@@ -291,7 +291,7 @@ function _extends() {
   \*******************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"yana/button","version":"0.0.1","title":"Button","category":"widgets","icon":"button","description":"Button","supports":{"html":false},"textdomain":"button","editorScript":"file:./button.js","editorStyle":"file:./button.css","style":"file:./style-button.css","attributes":{"text":{"type":"string"},"linkObject":{"type":"object","default":{}},"config":{"type":"string","default":"primary"}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"path/button","version":"0.0.1","title":"Button","category":"widgets","icon":"button","description":"Button","supports":{"html":false},"textdomain":"button","editorScript":"file:./button.js","editorStyle":"file:./button.css","style":"file:./style-button.css","attributes":{"text":{"type":"string"},"linkObject":{"type":"object","default":{}},"config":{"type":"string","default":"primary"}}}');
 
 /***/ })
 

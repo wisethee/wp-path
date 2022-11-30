@@ -10,7 +10,7 @@ const Save = (props) => {
     <a
       {...useBlockProps.save()}
       href={props.attributes.linkObject.url}
-      className={`yana-button is-${props.attributes.config}`}
+      className={`path-button is-${props.attributes.config}`}
     >
       <span>{props.attributes.text}</span>
       <svg width="13px" height="10px" viewBox="0 0 13 10">

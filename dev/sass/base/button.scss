@@ -1,0 +1,26 @@
+// Outlined Buttons
+.wp-block-button.is-style-outline a {
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  border-color: var(--wp--preset--color--secondary-container);
+  z-index: 1;
+}
+
+.wp-block-button.is-style-outline a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--wp--preset--color--secondary-container);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.wp-block-button.is-style-outline a:hover:before {
+  width: 100%;
+}

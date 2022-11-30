@@ -68,7 +68,7 @@ const Edit = (props) => {
         </ToolbarGroup>
       </BlockControls>
 
-      <div className={`yana-button is-${props.attributes.config}`}>
+      <div className={`path-button is-${props.attributes.config}`}>
         <RichText
           {...useBlockProps()}
           allowedFormats={[]}

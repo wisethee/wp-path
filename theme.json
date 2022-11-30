@@ -218,10 +218,8 @@
         }
       },
       "spacing": {
-        "small": "max(1rem, 2vw)",
-        "medium": "clamp(2rem, 8vw, 4rem)",
-        "large": "clamp(4rem, 10vw, 6rem)",
-        "outer": "var(--wp--custom--spacing--small, 1rem)"
+        "p-x": "clamp(1rem, -1.1429rem + 5.7143vw, 4rem)",
+        "p-y": "clamp(0.5625rem, 0.0268rem + 1.4286vw, 1.3125rem)"
       }
     }
   },
@@ -291,6 +289,14 @@
           "fontSize": "var(--wp--preset--font-size--label-medium)",
           "fontWeight": "600",
           "letterSpacing": "0.03em"
+        },
+        "spacing": {
+          "padding": {
+            "top": "6px",
+            "right": "16px",
+            "bottom": "6px",
+            "left": "16px"
+          }
         }
       },
       "core/navigation": {
