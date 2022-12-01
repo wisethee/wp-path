@@ -1,5 +1,11 @@
+.wp-block-template-part:has(.path-experience) {
+  position: relative;
+  z-index: 30;
+  margin-bottom: -82px;
+}
+
 .path-experience {
-  padding: var(--wp--custom--spacing--p-y) var(--wp--custom--spacing--p-x);
+  padding: 0 var(--wp--custom--spacing--p-x);
   margin-block-start: 96px;
 }
 
@@ -7,6 +13,7 @@
   padding: 24px;
   background-color: var(--wp--preset--color--primary);
   border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.24);
 }
 
 .path-experience-column {
