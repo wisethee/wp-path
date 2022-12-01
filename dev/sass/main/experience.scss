@@ -1,0 +1,25 @@
+.path-experience {
+  padding: var(--wp--custom--spacing--p-y) var(--wp--custom--spacing--p-x);
+  margin-block-start: 96px;
+}
+
+.path-experience-columns {
+  padding: 24px;
+  background-color: var(--wp--preset--color--primary);
+  border-radius: 12px;
+}
+
+.path-experience-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.path-experience-column p {
+  margin-block-start: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
