@@ -1,0 +1,110 @@
+.wp-block-template-part:has(.path-footer) {
+  position: relative;
+  z-index: 1;
+}
+
+.path-footer {
+  padding: calc(var(--wp--custom--spacing--p-y) * 9)
+    var(--wp--custom--spacing--p-x) var(--wp--custom--spacing--p-y);
+  background-color: #03522a;
+}
+
+.path-footer-columns {
+  gap: 48px !important;
+}
+
+.path-footer-form .wp-block-contact-form-7-contact-form-selector {
+  width: 100%;
+}
+
+.path-footer-form form p {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.path-footer-form form span {
+  display: inline-block;
+  width: 100%;
+}
+
+.path-footer-form form span input {
+  width: calc(100% - 3rem);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  font-family: var(--wp--preset--font-family--sans);
+  font-size: var(--wp--preset--font-size--body-large);
+  background-color: var(--wp--preset--color--surface);
+  color: var(--wp--preset--color--on-surface-variant);
+  line-height: 42px;
+  padding: 1px 16px;
+  outline: 0;
+  transition: all ease-in 0.2ms;
+}
+
+.path-footer-form form span input:focus {
+  border: 2px solid #f0cf68;
+}
+
+.path-footer-form form .wpcf7-form-control-wrap span {
+  font-family: var(--wp--preset--font-family--sans);
+  font-size: var(--wp--preset--font-size--body-small);
+  color: #f0cf68;
+  margin-top: 4px;
+}
+
+.path-footer-form .wpcf7-submit {
+  border-radius: 6px;
+  font-family: var(--wp--preset--font-family--sans);
+  font-size: var(--wp--preset--font-size--body-small);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  padding: 8px 12px !important;
+  color: var(--wp--preset--color--on-primary) !important;
+  background-color: var(--wp--preset--color--primary);
+  border-width: 0;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.path-footer-form .wpcf7-submit:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+.wpcf7-response-output,
+.wpcf7-spinner {
+  display: none !important;
+}
+
+.path-footer-bottom {
+  position: relative;
+  padding: 24px 0;
+}
+
+.path-footer-bottom:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  background-color: var(--wp--preset--color--surface-variant);
+  opacity: 0.06;
+}
+
+.path-footer-bottom p {
+  opacity: 0.6;
+}
+
+.path-footer-bottom nav ul li a {
+  color: var(--wp--preset--color--surface-variant) !important;
+  font-weight: 400;
+  font-size: var(--wp--preset--font-size--label-small) !important;
+  opacity: 0.6;
+  transition: all 0.1s ease;
+}
+
+.path-footer-bottom nav ul li a:hover {
+  opacity: 0.9;
+}

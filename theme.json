@@ -263,7 +263,7 @@
           "fontFamily": "var(--wp--preset--font-family--sans)",
           "fontWeight": "700",
           "fontSize": "var(--wp--preset--font-size--title-large)",
-          "lineHeight": "var(--wp--custom--typography--line-height--title-large)"
+          "lineHeight": "1.2"
         }
       },
       "h5": {
@@ -271,7 +271,7 @@
           "fontFamily": "var(--wp--preset--font-family--sans)",
           "fontWeight": "700",
           "fontSize": "var(--wp--preset--font-size--title-medium)",
-          "lineHeight": "var(--wp--custom--typography--line-height--title-medium)"
+          "lineHeight": "1.2"
         }
       },
       "h6": {

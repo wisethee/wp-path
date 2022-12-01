@@ -8,6 +8,7 @@ if ( ! function_exists( 'path_support' ) ) :
     // Register nav menus.
     register_nav_menus(array(
       'primary' => __('Primary Navigation', ''),
+      'footer' => __('Footer Navigation', ''),
     ));
   }
 endif;

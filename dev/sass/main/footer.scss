@@ -1,12 +1,15 @@
-.wp-block-template-part:has(.path-footer) {
-  position: relative;
-  z-index: 1;
+.path-footer-block {
+  margin-top: -82px;
 }
 
 .path-footer {
   padding: calc(var(--wp--custom--spacing--p-y) * 9)
     var(--wp--custom--spacing--p-x) var(--wp--custom--spacing--p-y);
   background-color: #03522a;
+}
+
+.path-footer-columns {
+  gap: 48px !important;
 }
 
 .path-footer-form .wp-block-contact-form-7-contact-form-selector {
@@ -72,4 +75,35 @@
 .wpcf7-response-output,
 .wpcf7-spinner {
   display: none !important;
+}
+
+.path-footer-bottom {
+  position: relative;
+  padding: 24px 0;
+}
+
+.path-footer-bottom:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  background-color: var(--wp--preset--color--surface-variant);
+  opacity: 0.06;
+}
+
+.path-footer-bottom p {
+  opacity: 0.6;
+}
+
+.path-footer-bottom nav ul li a {
+  color: var(--wp--preset--color--surface-variant);
+  font-weight: 400;
+  font-size: var(--wp--preset--font-size--label-small);
+  opacity: 0.6;
+  transition: all 0.1s ease;
+}
+
+.path-footer-bottom nav ul li a:hover {
+  opacity: 0.9;
 }
