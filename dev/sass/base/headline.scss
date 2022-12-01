@@ -12,7 +12,7 @@
 .path-featured-headline-large,
 .path-featured-headline-placeholder h6,
 .path-featured-headline-small {
-  position: absolute;
+  position: absolute !important;
   font-weight: 900;
   letter-spacing: 0.03em;
   opacity: 0.12;
@@ -30,7 +30,7 @@
 
 .path-featured-headline-placeholder h6,
 .path-featured-headline-small {
-  font-size: clamp(6rem, 4.2353rem + 4.7059vw, 8rem);
+  font-size: clamp(2rem, 1.8571rem + 5.7143vw, 5rem);
   top: -64px;
   left: 0;
 }
